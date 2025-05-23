@@ -107,7 +107,7 @@ type <- function(fn = function(){}, s3 = "Q7default"){
     "return(.my)",
     "})()",
     "}"),
-    keep.source = FALSE)
+    keep.source = getOption("q7.keep.source"))
 
     structure(fn,
               class = c(s3, "Q7type", class(fn)),
